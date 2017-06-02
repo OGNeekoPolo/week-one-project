@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="newsletter.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i" rel="stylesheet">
+  <link rel="icon" href="./images/optimized/bent-creek-logo-coral.png" type="image/gif">
+  <title>
+    Bent Creek Ceramics - Newsletter
+  </title>
+</head>
+
+<body>
+  <header class "nav_bar">
+    <div>
+      <img src="./images/optimized/bent-creek-logo.png" id="logo" alt="logo">
+      <ul class="main_navigation">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html" alt="about">About</a>
+        </li>
+        <li>
+          <a href="newsletter.html" alt="newsletter">Newsletter</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <fieldset>
+    <div>
+      <h2>Sign Up for Our Weekly Newsletter</h2>
+      <h3>Stay up to date with events, activities, news and specials.</h3>
+      <div class="name">
+        <label for="full_name">Name</label>
+        <input type="text" name="nameInput" id="nameInput">
+      </div>
+      <div class="email">
+        <label for="user_email">Email</label>
+        <input type="email" name="emailInput" id="emailInput">
+      </div>
+      <div class="submit_container">
+        <input type="submit" id="signupButton" value="Submit">
+      </div>
+      <div>
+  </fieldset>
+  <script type="text/javascript">
+    var nameInput = document.getElementById('nameInput');
+    var emailInput = document.getElementById('emailInput');
+    var signupButton = document.getElementById('signupButton');
+    signupButton.addEventListener('click', function(e) {
+      var nameVal = nameInput.value;
+      var emailVal = emailInput.value;
+      if (nameVal && emailVal) {
+        alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+        nameInput.value = "";
+        emailInput.value = "";
+      } else {
+        alert('We would love for you to sign up, please provide both your name and email address.');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

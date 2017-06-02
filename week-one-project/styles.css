@@ -1,0 +1,236 @@
+/*
+Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343
+*/
+
+body {
+  margin: 0;
+  /*display: flex;
+  flex-direction: column;*/
+}
+
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding-right: 20px;
+  z-index: 3;
+  box-shadow: 1px 1px 10px;
+
+
+}
+
+.nav_bar {
+  background-color: #FFFFFF;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*width: 100%;*/
+}
+
+#logo {
+  position: absolute;
+  /*padding: 20px;*/
+  /*background-image: url("./images/optimized/bent-creek-logo.png");*/
+  align-self: center;
+  background-size: contain;
+  width: 30px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+
+.main_navigation {
+  /*position: auto;*/
+  display: flex;
+  width: auto;
+  justify-content: center;
+  /*width: 100%;*/
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
+  text-transform: uppercase;
+  padding-right: 30px;
+  /*padding-left: 80px;
+  padding-right: 80px;*/
+}
+
+/*.nav_item {
+  font-family: 'Roboto', sans-serif;
+  position: auto;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}*/
+
+a {
+  color: #2B2F26;
+  padding-left: 20px;
+}
+
+a:hover {
+  color: #CD5D67;
+}
+
+a:active {
+  color: #968772;
+}
+
+/*li a {
+  text-transform: uppercase;
+  color: #2B2F26;
+}*/
+
+
+main {
+  background-color: #F2F1E8;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  /*flex-direction: row;*/
+}
+
+.page_header {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  width: 100%;
+  align-self: center;
+  font-weight: normal;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+#name {
+  font-weight: normal;
+  font-size: 30pt;
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#slogan {
+  font-weight: lighter;
+  font-size: 20pt;
+}
+
+.content_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+  /*width: 100%;*/
+  /*margin-left: 15px;
+  margin-right: 15px;*/
+}
+
+.label {
+  background-color: #2B2F26;
+  color: #F2F1E8;
+  font-weight: lighter;
+  font-family: 'Merriweather', serif;
+  padding: 5px;
+  font-size: 10pt;
+  width: 40%;
+}
+
+div {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  /*width: auto;*/
+}
+
+
+.endless {
+  background-image: url("./images/optimized/product-1.jpg");
+  padding-top: 150px;
+  /*padding-right: 310px;*/
+  background-size: cover;
+  width: 40%;
+  /*height: 25%;*/
+}
+
+.sets {
+  background-image: url("./images/optimized/product-2.jpg");
+  padding-top: 150px;
+  /*padding-right: 125px;*/
+  background-size: cover;
+  width: 25%;
+  /*height: 25%;*/
+  /*margin-left: 10px;
+  margin-right: 10px;*/
+}
+
+.textures {
+  background-image: url("./images/optimized/product-3.jpg");
+  padding-top: 150px;
+  /*padding-right: 125px;*/
+  background-size: cover;
+  width: 25%;
+  /*height:25%;*/
+}
+
+.tea {
+  background-image: url("./images/optimized/product-4.jpg");
+  padding-top: 80px;
+  /*padding-right: 80px;*/
+  background-size: cover;
+  /*margin-left: 15px;*/
+  width: 20%;
+}
+
+.jar {
+  background-image: url("./images/optimized/product-5.jpg");
+  padding-top: 80px;
+  /*padding-right: 40px;*/
+  background-size: cover;
+  width: 20%;
+}
+
+.wasabi {
+  background-image: url("./images/optimized/product-6.jpg");
+  padding-top: 80px;
+  /*padding-right: 170px;*/
+  background-size: cover;
+  width: 29%;
+}
+
+.sippin {
+  background-image: url("./images/optimized/product-7.jpg");
+  padding-top: 80px;
+  /*padding-right: 40px;*/
+  background-size: cover;
+  width: 20%;
+}
+
+#copyright {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 20px;
+  background-color: #2B2F26;
+  color: #F2F1E8;
+  font-weight: lighter;
+}
